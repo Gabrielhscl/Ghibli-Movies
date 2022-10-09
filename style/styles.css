@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url(https://i.pinimg.com/originals/d1/fb/03/d1fb032d8c674497bed108893a150adb.jpg); */
+    /* background-image: url(https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.big-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    max-width: 50rem;
+    height: 50vh;
+
+    
+    background: rgba(238, 185, 141, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(238, 185, 141, 0.35);
+}
+
+.cover-card {
+    width: inherit;
+    height: 45vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.big-card img {
+    margin-left: 20px ;
+    height: 45vh;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 62, 87, 0.35);
+}
+
+.film-info {
+    width: 100%;
+    height: 100%;
+    max-height: 40vh;
+    display: inline-block;
+}
+
+.area-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.area-description {
+    width: 100%;
+}
+
+.area-description span {
+    text-align: center;
+    
+}
+
+.area-info {
+    margin-top: 2rem;
+}
+
+.area-director{
+    display: flex;
+    margin-top: .5rem;
+}
+
+.button {
+    margin-top: 1rem;
+	border-radius:2.625rem;
+	border:.125rem solid #E1DB9D;
+	cursor:pointer;
+	color:#ffffff;
+	padding:0.5rem 1rem;
+	text-shadow:0rem .125rem 0rem #2f6627;
+}
+
+.button:hover {
+    transition: 0.2s;
+    background: #E1DB9D;
+    box-shadow: 0px 1px 10px 0px #E1DB9D;
+    border:.125rem solid #2f6627;
+}
