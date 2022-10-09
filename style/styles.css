@@ -11,12 +11,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-image: url(https://i.pinimg.com/originals/d1/fb/03/d1fb032d8c674497bed108893a150adb.jpg); */
-    /* background-image: url(https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-
-
+    background-position: center;
 }
 
 .big-card {
@@ -29,17 +26,17 @@
 
     
     background: rgba(238, 185, 141, 0.29);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(6.5px);
-    border: 1px solid rgba(238, 185, 141, 0.35);
+    border-radius: 1rem;
+    box-shadow: 0 .25rem 1.875rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(.4063rem);
+    -webkit-backdrop-filter: blur(.4063rem);
+    border: .0625rem solid rgba(238, 185, 141, 0.35);
 }
 
 .cover-card {
     width: inherit;
     height: 45vh;
-    margin: 20px;
+    margin: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -47,10 +44,10 @@
 }
 
 .big-card img {
-    margin-left: 20px ;
+    margin-left: 1.25rem ;
     height: 45vh;
-    border-radius: 10px;
-    border: 5px solid rgba(0, 62, 87, 0.35);
+    border-radius: .625rem;
+    border: .3125rem solid rgba(0, 62, 87, 0.35);
 }
 
 .film-info {
@@ -96,6 +93,48 @@
 .button:hover {
     transition: 0.2s;
     background: #E1DB9D;
-    box-shadow: 0px 1px 10px 0px #E1DB9D;
+    box-shadow: 0rem .0625rem .625rem 0rem #E1DB9D;
     border:.125rem solid #2f6627;
+}
+
+@media screen and (max-width: 50rem) {
+    .big-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        max-width: 50rem;
+        height: 90vh;
+    
+        
+        background: rgba(238, 185, 141, 0.29);
+        border-radius: 1rem;
+        box-shadow: 0 .25rem 1.875rem rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(.4063rem);
+        -webkit-backdrop-filter: blur(.4063rem);
+        border: .0625rem solid rgba(238, 185, 141, 0.35);
+    }
+
+    .big-card img {
+        margin-top: 1.25rem;
+        border-radius: .625rem;
+        border: .3125rem solid rgba(0, 62, 87, 0.35);
+    }
+
+    .cover-card {
+        width: inherit;
+        height: 45vh;
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .film-info {
+        width: 95%;
+        height: 100%;
+        max-height: 40vh;
+    }
+    
 }
