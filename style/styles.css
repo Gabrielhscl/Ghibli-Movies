@@ -25,9 +25,9 @@
     height: 50vh;
 
     
-    background: rgba(238, 185, 141, 0.29);
+    background: linear-gradient(180deg, rgba(130, 192, 237, 0.521) 22.92%, #fefc8d57 100%);;
     border-radius: 1rem;
-    box-shadow: 0 .25rem 1.875rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(.4063rem);
     -webkit-backdrop-filter: blur(.4063rem);
     border: .0625rem solid rgba(238, 185, 141, 0.35);
@@ -67,8 +67,7 @@
 }
 
 .area-description span {
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .area-info {
@@ -99,42 +98,20 @@
 
 @media screen and (max-width: 50rem) {
     .big-card {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 70vw;
-        max-width: 50rem;
         height: 90vh;
-    
-        
-        background: rgba(238, 185, 141, 0.29);
-        border-radius: 1rem;
-        box-shadow: 0 .25rem 1.875rem rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(.4063rem);
-        -webkit-backdrop-filter: blur(.4063rem);
-        border: .0625rem solid rgba(238, 185, 141, 0.35);
     }
 
     .big-card img {
         margin-top: 1.25rem;
-        border-radius: .625rem;
-        border: .3125rem solid rgba(0, 62, 87, 0.35);
     }
 
     .cover-card {
-        width: inherit;
-        height: 45vh;
-        margin: 1.25rem;
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
     
     .film-info {
         width: 95%;
-        height: 100%;
-        max-height: 40vh;
     }
     
 }

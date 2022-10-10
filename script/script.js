@@ -25,7 +25,6 @@ function main(){
     movie = listMovie[next];
 
     main.style.backgroundImage = `url(${movie.movie_banner})`
-    console.log(movie.image)
 
     cover.src = movie.image;
 
@@ -42,11 +41,17 @@ function main(){
 
 function nextMovie(){
     next = next + 1;
+    if (next >= 21) {
+        next = 21
+    }
     main()
 }
 
 function backMovie(){
     next = next - 1;
+    if (next < 0) {
+        next = 0
+    }
     main()
 }
 
