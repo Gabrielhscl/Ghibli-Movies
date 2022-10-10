@@ -44,7 +44,7 @@
 }
 
 .big-card img {
-    margin-left: 1.25rem ;
+    margin-left: 1.25rem;
     height: 45vh;
     border-radius: .625rem;
     border: .3125rem solid rgba(0, 62, 87, 0.35);
@@ -103,6 +103,7 @@
     }
 
     .big-card img {
+        margin-left: 0;
         margin-top: 1.25rem;
     }
 

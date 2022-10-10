@@ -18,9 +18,7 @@ function main(){
     let director = document.getElementById("director");
     let producer = document.getElementById("producer");
 
-
     let main = document.getElementById("main2")
-
 
     movie = listMovie[next];
 
@@ -54,7 +52,5 @@ function backMovie(){
     }
     main()
 }
-
-
 
 main();
